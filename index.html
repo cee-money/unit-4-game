@@ -45,7 +45,7 @@ Here's how the app works:
                         <div class="container">
                             <h1 class="display-2 text-center font-weight-bold">Crystals Collector</h1>
                             <p class="lead text-center"></p>
-                            <p class="lead text-center font-weight-bold">By clicking on the crystals below (which each have hidden values) match your score to the number shown. </p>
+                            <p class="lead text-center font-weight-bold">Each crystal below has a hidden value. By clicking on the crystals, match your score to the number shown. </p>
                             <p class="lead text-center font-weight-bold">Beware: after a win or loss, each crystal's value will change!</p>
                         </div>
                 </div>
@@ -54,46 +54,57 @@ Here's how the app works:
     </header>
 
     <div class="container-1">
+        <div class="row score-header">
+            <div class="col-sm-12 text-center">
+                <h1>TARGET SCORE</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4 text-center border border-secondary" id="random-number">RANDOM NUMBER</div>
+            <div class="col-sm-4 text-center font-weight-bold border border-secondary" id="target-score">
+                <h1> </h1>
+            </div>
             <div class="col-sm-4"></div>
         </div>
     </div>
 
     <div class="container-2">
+        <div class="row my-score-header">
+                <div class="col-sm-12 text-center">
+                    <h3>YOUR SCORE</h3>
+                </div>
+        </div>
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-3" id="crystals-div">
                     <div class="row">
-                        <div class="col-sm-3 crystal-container">
-                            <img src="assets/images/crystal1.PNG" class="img-fluid" alt="crstyal 1" />
+                        <div class="col-sm-3 button crystal-container">
+                            <img src="assets/images/crystal1.PNG" class="img-fluid" id="crystal-1" alt="crstyal 1" />
                         </div>
                         <div class="col-sm-3 crystal-container">
-                            <img src="assets/images/crystal2.PNG" class="img-fluid" alt="crstyal 2" />
+                            <img src="assets/images/crystal2.PNG" class="img-fluid" id="crystal-2" alt="crstyal 2" />
                         </div>
                         <div class="col-sm-3 crystal-container">
-                            <img src="assets/images/crystal3.PNG" class="img-fluid" alt="crstyal 3" />
+                            <img src="assets/images/crystal3.PNG" class="img-fluid" id="crystal-3" alt="crstyal 3" />
                         </div>
                         <div class="col-sm-3 crystal-container">
-                            <img src="assets/images/crystal4.PNG" class="img-fluid" alt="crstyal 4" />
+                            <img src="assets/images/crystal4.PNG" class="img-fluid" id="crystal-4" alt="crstyal 4" />
                         </div>
                     </div>
             </div>
-            <div class="col-sm-2 offset-sm-1 text-center border border-secondary" id="my-score">MY SCORE</div>
+            <div class="col-sm-2 offset-sm-1 text-center font-weight-bold border border-secondary" id="my-score"><h2>0</h2></div>
             <div class="col-sm-1"></div>
             <div class="col-sm-2 border border-secondary" id="counters">
                     <div class="row">
-                        <div class="col-sm-12 text-center" id="wins-text">WINS: 0</div>
+                        <div class="col-sm-12 text-center" id="wins-text"><h3>WINS: 0</h3></div>
                     </div>  
                     <div class="row">
-                        <div class="col-sm-12 text-center" id="losses-text">LOSSES: 0</div>    
+                        <div class="col-sm-12 text-center" id="losses-text"><h3>LOSSES: 0</h3></div>    
                     </div>
             </div>
             <div class="col-sm-2"></div>
         </div>
     </div>
-    
     
     <!-- Javascript File -->
     <script src="assets/javascript/game.js"></script>
